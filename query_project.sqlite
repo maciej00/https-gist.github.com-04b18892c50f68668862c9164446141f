@@ -1,0 +1,57 @@
+SELECT DISTINCT year FROM  movies
+ORDER BY year ASC;
+SELECT * FROM movies
+WHERE genre LIKE 'drama';
+SELECT * FROM movies
+WHERE name LIKE '%bride%';
+SELECT * FROM movies
+WHERE year BETWEEN 2000 AND 2015
+ORDER BY year ASC;
+SELECT * FROM movies
+WHERE year LIKE 1995
+OR imdb_rating = 9;
+SELECT name, imdb_rating, year FROM movies
+WHERE year > 2009
+ORDER BY name ASC;
+SELECT name, imdb_rating FROM movies
+WHERE imdb_rating = 7
+LIMIT 3;
+SELECT * FROM movies
+WHERE imdb_rating > 6
+AND year > 1995
+AND genre LIKE 'comedy'
+ORDER BY imdb_rating DESC
+LIMIT 10;
+SELECT * FROM movies
+WHERE name LIKE '%cast away%';
+SELECT * FROM movies
+WHERE imdb_rating != 7;
+SELECT * FROM movies
+WHERE genre = 'horror'
+AND imdb_rating < 6;
+SELECT * FROM movies
+WHERE imdb_rating > 8
+ORDER BY genre;
+SELECT * FROM movies
+WHERE name LIKE '%King%';
+SELECT * FROM movies
+WHERE name LIKE '%out';
+SELECT * FROM movies
+WHERE name LIKE 'The%'
+ORDER BY imdb_rating DESC;
+SELECT * FROM movies;
+SELECT name, id FROM movies
+WHERE id >125;
+SELECT * FROM movies
+WHERE name LIKE 'X-men%';
+SELECT * FROM movies
+ORDER BY name DESC
+LIMIT 10;
+SELECT id, name, genre FROM movies
+WHERE genre LIKE 'romance';
+SELECT * FROM movies
+WHERE name LIKE '%Twilight%'
+ORDER BY year ASC;
+SELECT * FROM movies
+WHERE year = 2012
+AND genre LIKE 'comedy';
